@@ -34,6 +34,8 @@ public class Utilities extends ResumeUpdateBase {
 		
 	}
 	
+	//To upload the file using robot class
+	
 	public static void setClipboardData(String string) {
 		
 		//StringSelection is a class that can be used for copy and paste operations.
