@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Job Search Suite">
+
+    <listeners>
+		<listener class-name="com.resumeupdate.extentreport.ExtentReporterNG" />
+	</listeners>
+  
+
+	<test name="Job Search Regression Tests" preserve-order="true" >
+	   <classes>
+	   	   <class name="com.resumeupdate.tests.LoginPageTest" />
+	       <class name="com.resumeupdate.tests.HomePageTest" />
+	       <class name="com.resumeupdate.tests.ProfilePageTest" />
+	   </classes>
+	</test>
+</suite>

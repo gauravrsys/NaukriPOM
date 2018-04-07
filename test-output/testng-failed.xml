@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Job Search Suite]">
+  <listeners>
+    <listener class-name="com.resumeupdate.extentreport.ExtentReporterNG"/>
+  </listeners>
+  <test name="Job Search Regression Tests(failed)">
+    <classes>
+      <class name="com.resumeupdate.tests.ProfilePageTest">
+        <methods>
+          <include name="profilePageTestOne"/>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.resumeupdate.tests.ProfilePageTest -->
+      <class name="com.resumeupdate.tests.HomePageTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+          <include name="homePageTestOne"/>
+        </methods>
+      </class> <!-- com.resumeupdate.tests.HomePageTest -->
+      <class name="com.resumeupdate.tests.LoginPageTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+          <include name="loginPageTestOne"/>
+        </methods>
+      </class> <!-- com.resumeupdate.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Job Search Regression Tests(failed) -->
+</suite> <!-- Failed suite [Job Search Suite] -->
