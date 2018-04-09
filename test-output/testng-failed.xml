@@ -13,20 +13,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.resumeupdate.tests.ProfilePageTest -->
-      <class name="com.resumeupdate.tests.HomePageTest">
-        <methods>
-          <include name="initialization"/>
-          <include name="tearDown"/>
-          <include name="homePageTestOne"/>
-        </methods>
-      </class> <!-- com.resumeupdate.tests.HomePageTest -->
-      <class name="com.resumeupdate.tests.LoginPageTest">
-        <methods>
-          <include name="initialization"/>
-          <include name="tearDown"/>
-          <include name="loginPageTestOne"/>
-        </methods>
-      </class> <!-- com.resumeupdate.tests.LoginPageTest -->
     </classes>
   </test> <!-- Job Search Regression Tests(failed) -->
 </suite> <!-- Failed suite [Job Search Suite] -->

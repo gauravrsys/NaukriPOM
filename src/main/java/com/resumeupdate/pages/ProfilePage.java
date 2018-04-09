@@ -3,6 +3,7 @@ package com.resumeupdate.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.resumeupdate.elements.ProfilePageElements;
@@ -17,7 +18,9 @@ public class ProfilePage extends ProfilePageElements {
 		/*JavascriptExecutor js= (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.id("attachCV")));*/
 		
-		getWriteResume().click();
+		Actions a= new Actions(driver);
+		a.moveToElement(getWriteResume()).click().build().perform();
+		//getWriteResume().click();
 	
 		try {
 			Thread.sleep(2000);
@@ -32,7 +35,7 @@ public class ProfilePage extends ProfilePageElements {
 				+ "/Resume/Gaurav_Agnihotri_Updated_Resume.doc");
 		
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			
 			e.printStackTrace();
